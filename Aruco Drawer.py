@@ -213,7 +213,7 @@ def drawCylinder(img, ar_list, ar_id, camera_matrix, dist_coeff):
 
 if __name__=="__main__":
         cam, dist = getCameraMatrix()
-        img = cv2.imread("image_7.jpg")
+        img = cv2.imread("./TestCases/image_7.jpg")
         aruco_list = detect_markers(img, cam, dist)
         for i in aruco_list:
                 img = drawAxis(img, aruco_list, i[0], cam, dist)
